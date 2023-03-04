@@ -1,0 +1,8 @@
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+ 
+score = list(arr)
+
+set_list = sorted(list(set(score)))
+print(set_list[-2])
