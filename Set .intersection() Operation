@@ -1,0 +1,8 @@
+eng_nr  = int(input())
+eng_mat = set(map(int, input().split()))
+fr_nr  = int(input())
+fr_mat = set(map(int, input().split()))
+
+
+bi_lin_mat = eng_mat.intersection(fr_mat)
+print(len(bi_lin_mat))
