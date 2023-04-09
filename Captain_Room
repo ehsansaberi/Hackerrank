@@ -1,0 +1,14 @@
+n = int(input())
+arr = list(map(int, input().split()))
+
+unique_rooms = set(arr)
+sum_of_unique_rooms = sum(unique_rooms) * n
+sum_of_all_rooms = sum(arr)
+
+captain_room = (sum_of_unique_rooms - sum_of_all_rooms) // (n - 1)
+
+print(captain_room)
+print(f"arr : {arr}")
+print(f"unique room : {unique_rooms}")
+print(f"sum of unique rooms :{sum_of_unique_rooms}")
+print(f"sum of all rooms : {sum_of_all_rooms}")
